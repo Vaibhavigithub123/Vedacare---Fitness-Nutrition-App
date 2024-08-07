@@ -1,0 +1,246 @@
+
+
+ /* Modal Styles */
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(0,0,0,0.3);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.modal-h {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  background-color: var(--blue-green-color-wheel);
+  top: 8%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#play-button, #close-button {
+  position: absolute;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#play-button {
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  padding: 65px 75px;
+  font-weight: 700;
+  border: 7px solid white;
+  border-radius: 50%;
+}
+
+#close-button {
+  top: 20px;
+  right: 20px;
+  border-radius: 5px;
+}
+
+#close-button:hover {
+  background-color: #da190b;
+}
+
+.open-popup {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-h h2 {
+ 
+  z-index: 10;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Overlay Styles */
+#video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 5; /* Ensure it is on top of the video */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Category Styles */
+.section-category {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--cultured);
+  position: relative;
+}
+
+.category-container {
+  width: 90%;
+  background: var(--white);
+  min-height: 90vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px;
+  row-gap: 30px;
+  box-shadow: var(--shadow-2);
+}
+
+.section-category h1 {
+  padding: 20px 85px;
+  
+}
+
+.category-container .category-card {
+  border: 5px solid #ffD04D;
+  width: 250px;
+  height: 330px;
+  margin-left: 15%;
+  border-radius: var(--radius-10);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-container .category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-container .category-card .card-body {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: -100%;
+  position: absolute;
+  background-color: #1f3d3747;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: black;
+  transition: 1s;
+}
+
+.category-container .category-card:hover .card-body {
+  bottom: 0;
+}
+
+.category-container .category-card .card-body .card-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  padding: 10px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .category-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .category-container .category-card {
+    width: 220px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .category-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-container .category-card {
+    width: 200px;
+    height: 280px;
+  }
+
+  .section-category h1 {
+    padding: 20px 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-container {
+    grid-template-columns: 1fr;
+  }
+
+  .category-container .category-card {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-category h1 {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  #play-button {
+    font-size: 30px;
+    padding: 35px 40px;
+  }
+
+  .modal-h h2 {
+    font-size: 20px;
+  }
+
+  .category-container {
+    padding: 15px;
+  }
+
+  .category-container .category-card {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .category-container .category-card .card-body .card-title {
+    font-size: 18px;
+  }
+}

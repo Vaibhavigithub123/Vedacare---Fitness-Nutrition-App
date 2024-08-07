@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedacare - Fitness & Nutrition</title>
+    <link rel="stylesheet" href="./assets/css/meditation.css">
+    <link rel="stylesheet" href="style-guide.md">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section class="section-category">
+        <h1>Categories...</h1>
+
+        <div class="modal" id="popup">
+            <div class="modal-h">
+                <div class="overlay"></div>
+            </div>
+        </div>
+        <div class="category-container">
+
+            <div class="category-card" onclick="openPopup('Productivity')">
+                <img src="assets/images/productivityavif.avif" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">Productivity</h1>
+                </div>
+            </div>
+
+            <div class="category-card" onclick="openPopup('Cat Purring')">
+                <img src="assets/images/cat.avif" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">Cat Purring</h1>
+                </div>
+                
+            </div>
+
+            <div class="category-card" onclick="openPopup('Piano')">
+                <img src="assets/images/piano.avif" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">Piano Asmr</h1>
+                </div>
+            </div>
+
+            <div class="category-card" id="card2" onclick="openPopup('Thunder')">
+                <img src="assets/images/thunder.avif" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">Thunder</h1>
+                </div>
+            </div>
+
+            <div class="category-card" onclick="openPopup('Forest')">
+                <img src="assets/images/forest.avif" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">Forest</h1>
+                </div>
+            </div>
+
+            <div class="category-card" onclick="openPopup('Calm')">
+                <img src="assets/images/calm.jpg" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">Calm</h1>
+                </div>
+            </div>
+
+            <div class="category-card" onclick="openPopup('Birds')">
+                <img src="assets/images/rain-with-birds.avif" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">Birds</h1>
+                </div>
+            </div>
+
+            <div class="category-card" onclick="openPopup('Planets')">
+                <img src="assets/images/uranus.avif" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">Planets</h1>
+                </div>
+            </div>
+
+            <div class="category-card" id="card1" onclick="openPopup('Waterfall')">
+                <img src="assets/images/waterfall.avif" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">Waterfall</h1>
+                </div>
+            </div>
+            
+
+            <div class="category-card" onclick="openPopup('Waves')">
+                <img src="assets/images/beach.jpg" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">Waves</h1>
+                </div>
+            </div>
+
+            <div class="category-card" onclick="openPopup('Temple')">
+                <img src="assets/images/temple.jpg" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">Temple Ambient</h1>
+                </div>
+            </div>
+
+            <div class="category-card" onclick="openPopup('Jazz')">
+                <img src="assets/images/jazz.jpg" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">Jazz</h1>
+                </div>
+            </div>
+
+
+            <div class="category-card" onclick="openPopup('Rain in Town')">
+                <img src="assets/images/rain.avif" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">Rain in town</h1>
+                </div>
+            </div>
+            
+
+            <div class="category-card" onclick="openPopup('Sleep')">
+                <img src="assets/images/sleep.jpg" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">Sleep</h1>
+                </div>
+            </div>
+            
+            <div class="category-card" onclick="openPopup('Happy')">
+                <img src="assets/images/happy.jpg" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">Happy</h1>
+                </div>
+            </div>
+
+            <div class="category-card" onclick="openPopup('Focus')">
+                <img src="assets/images/focus.jpg" alt="">
+                <div class="card-body">
+                    <h1 class="card-title">Focus</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/meditation.js"></script>
+</body>
+</html>
