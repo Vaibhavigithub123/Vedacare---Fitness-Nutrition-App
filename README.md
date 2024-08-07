@@ -24,8 +24,9 @@ Here're some of the project's best features:
 <h2>📱 Screenshots</h2>
 
 ![Screenshot (738)](https://github.com/user-attachments/assets/c68a7d20-f9bf-4361-9e2e-c71df5bd3cc7)
-
-
+<br/>
+<br/>
+<br/>
 ![Screenshot (738)](https://github.com/user-attachments/assets/011c7c65-0475-455a-a269-289a96ab713a)
 
 
